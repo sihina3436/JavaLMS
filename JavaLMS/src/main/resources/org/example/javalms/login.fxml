@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javalms.LoginController">
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="350.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="126.0" layoutY="54.0" text="Secure Login">
+               <font>
+                  <Font name="Verdana" size="15.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Label>
+            <Label layoutX="33.0" layoutY="145.0" text="Username">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="33.0" layoutY="187.0" text="Password">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameTextField" layoutX="126.0" layoutY="143.0" prefHeight="25.0" prefWidth="176.0" promptText="Username" />
+            <PasswordField fx:id="passwordTextField" layoutX="126.0" layoutY="185.0" prefHeight="25.0" prefWidth="175.0" promptText="Password" />
+            <Button fx:id="loginButton" layoutX="33.0" layoutY="242.0" mnemonicParsing="false" onAction="#LoginEvent" prefHeight="30.0" prefWidth="270.0" style="-fx-background-color: #074173;" text="Login" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="cancelButton" layoutX="33.0" layoutY="289.0" mnemonicParsing="false" onAction="#CancelEvent" prefHeight="30.0" prefWidth="270.0" style="-fx-background-color: #074173;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="templable" layoutX="154.0" layoutY="98.0" />
+         </children>
+      </AnchorPane>
+   </right>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="250.0" style="-fx-background-color: #074173;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="-1.0" layoutY="138.0" prefHeight="17.0" prefWidth="254.0" text="LMS" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="26.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label alignment="CENTER" layoutX="-1.0" layoutY="188.0" prefHeight="17.0" prefWidth="254.0" text="Learning Management System" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="13.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Line endX="100.0" layoutX="127.0" layoutY="179.0" startX="-100.0" stroke="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Line>
+            <Label alignment="CENTER" layoutX="-1.0" layoutY="207.0" prefHeight="17.0" prefWidth="254.0" text="University of Ruhuna" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="13.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label alignment="CENTER" layoutY="364.0" prefHeight="17.0" prefWidth="254.0" text="Faculty of Technology" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="13.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="96.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/login.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

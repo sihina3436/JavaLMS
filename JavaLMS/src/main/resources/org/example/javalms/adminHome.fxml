@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFF; -fx-border-radius: 10px;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javalms.AdminHomeController">
+   <children>
+      <AnchorPane layoutX="335.0" layoutY="34.0" prefHeight="333.0" prefWidth="247.0" style="-fx-border-color: #074173; -fx-border-width: 3px; -fx-border-radius: 20px;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="71.0" layoutY="16.0" text="Your Details" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="98.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/boy.png" />
+               </image>
+            </ImageView>
+            <VBox alignment="TOP_CENTER" layoutX="8.0" layoutY="112.0" prefHeight="200.0" prefWidth="240.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="30.0" prefWidth="240.0">
+                     <children>
+                        <Label text="User ID :" textAlignment="CENTER">
+                           <HBox.margin>
+                              <Insets left="4.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="userID" text="TG/2021/1012" textAlignment="CENTER">
+                           <HBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="30.0" prefWidth="240.0">
+                     <children>
+                        <Label text="Name :">
+                           <HBox.margin>
+                              <Insets left="4.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="name" text="Sihina Nimnada">
+                           <HBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="30.0" prefWidth="240.0">
+                     <children>
+                        <Label text="Email :">
+                           <HBox.margin>
+                              <Insets left="4.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="email" prefHeight="17.0" prefWidth="172.0" text="nimnadasihina23@gmail.com">
+                           <HBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="30.0" prefWidth="240.0">
+                     <children>
+                        <Label text="Phone :">
+                           <HBox.margin>
+                              <Insets left="4.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="phone" text="0705044165">
+                           <HBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="30.0" prefWidth="240.0">
+                     <children>
+                        <Label text="Department :">
+                           <HBox.margin>
+                              <Insets left="4.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="department" text="ICT">
+                           <HBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="30.0" prefWidth="240.0">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/edit.png" />
+                           </image>
+                        </ImageView>
+                        <JFXButton fx:id="editBTN" onAction="#editDetails" style="-fx-border-color: #074173; -fx-border-radius: 10px;" text="Edit Details">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="39.0" layoutY="57.0" prefHeight="277.0" prefWidth="271.0" style="-fx-border-color: #074173; -fx-background-color: #f3f3f3; -fx-border-width: 3px; -fx-border-radius: 15px;">
+         <children>
+            <JFXButton fx:id="userBTN" alignment="CENTER" contentDisplay="CENTER" layoutX="24.0" layoutY="56.0" onAction="#userBTNClick" prefHeight="90.0" prefWidth="90.0" style="-fx-border-color: #074173; -fx-border-width: 2px; -fx-border-radius: 10px;" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="56.0">
+               <graphic>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/c_user.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="noticeBTN" alignment="CENTER" contentDisplay="CENTER" layoutX="147.0" layoutY="56.0" onAction="#noticeBTNClick" prefHeight="90.0" prefWidth="90.0" style="-fx-border-color: #074173; -fx-border-width: 2px; -fx-border-radius: 10px;" textAlignment="CENTER" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="56.0">
+               <graphic>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/c_notification.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="timetableBTN" alignment="CENTER" contentDisplay="CENTER" layoutX="24.0" layoutY="166.0" onAction="#timetableBTNClick" prefHeight="90.0" prefWidth="90.0" style="-fx-border-color: #074173; -fx-border-width: 2px; -fx-border-radius: 10px;" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="24.0">
+               <graphic>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/c_timetable.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="courseBTN" alignment="CENTER" contentDisplay="CENTER" layoutX="147.0" layoutY="167.0" onAction="#courseBTNClick" prefHeight="90.0" prefWidth="90.0" style="-fx-border-color: #074173; -fx-border-width: 2px; -fx-border-radius: 10px;" textAlignment="CENTER" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="24.0">
+               <graphic>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/c_course.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Label layoutX="50.0" layoutY="14.0" text="Admin Dashboard">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
